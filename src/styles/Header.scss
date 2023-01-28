@@ -1,0 +1,57 @@
+
+    .header {
+    
+        display:flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+      position: fixed;
+        width:90vw;
+        height:4vw;
+        background-color: rgb(253, 253, 253);
+ padding:0vw 5vw 0vw 5vw ;
+ margin-bottom:2vw;
+     .logo {
+        display:flex;
+       gap:0.5vw;
+        align-items: center;
+        color:rgb(123, 7, 255);
+        font-weight: 600;
+        font-size: 2vw;
+     }
+     .search-bar {
+      width:20vw;
+      height:3vw;
+      border-radius:10vw;
+      font-size: 1.5vw;
+      padding-left:1vw;
+      background-color: rgba(128, 128, 128, 0.107);
+      border: 0px;
+     }
+        .sign-out {
+          display:flex;
+          align-items: center;
+    
+           gap:10px;
+          button {
+            background-color: rgb(123, 7, 255);
+            width:10vw;
+            height:3vw;
+            font-size: 1.3vw;
+            font-weight: bolder;
+            color:white;
+            border-radius:20vw;
+            border:0px
+          }
+          img {
+            height:3vw;
+            border:0.20vw solid  rgba(123, 7, 255, 0.484);
+            border-radius:20vw;
+          }
+        }
+    }
+
+
+   
+
+

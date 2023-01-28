@@ -1,0 +1,38 @@
+.home-page {
+   padding-top:6vw;
+   display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+ background-color: #e2e8f0;
+
+    .create-post {
+        display:flex;
+        align-items: center;
+        justify-content: center;
+   
+        background-color: #ffffff;
+        width:50vw;
+        height:4vw;
+        gap:1vw;
+       .post-image {
+        border-radius: 20vw;
+        height:3vw;
+         
+       }
+        input {
+            border:none;
+            border-radius: 0.5vw;;
+            height:2.5vw;
+            width:40vw;
+            background-color: rgb(247, 247, 247);
+            font-size: 1.5vw;
+           
+        }
+        input:focus {
+           outline: none;
+        }
+       
+        
+    }
+}
