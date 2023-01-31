@@ -11,6 +11,16 @@ import 'firebase/compat/auth'
     const closeTextArea = () => {
      const textarea = document.querySelector('.textarea')
      textarea.style.visibility = "hidden"
+     disabledTexthidden()
+    }
+    const disabledText = () => {
+      const text = document.querySelector('.text')
+     text.style.visibility = "visible"
+    }
+
+    const disabledTexthidden = () => {
+      const text = document.querySelector('.text')
+     text.style.visibility = "hidden"
     }
   const SendMessage = async (e) => {
     e.preventDefault();
@@ -47,10 +57,12 @@ import 'firebase/compat/auth'
           <textarea className="title"  placeholder="Create Title..." maxLength="30" value={titleValue} onChange={(e) => setTitleValue(e.target.value)}/>
           <textarea className="post"  placeholder="Create Post..." maxLength="100" value={textValue} onChange={(e) => setTextValue(e.target.value)} />
           <input className="add-image" placeholder="Add image url" value={imageValue} onChange={(e) => setImageValue(e.target.value)}  ></input>
-          <button onClick={closeTextArea} className="publish" type="submit">Publish</button>
-        
+          <button onClick={disabledText} className="publish" type="button">Publish</button>
+     
           </form>
+          <p className="text">Posting is disabled at the moment.</p>
       </div>
+  
     )
 }
 

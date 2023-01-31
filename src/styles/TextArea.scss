@@ -89,6 +89,11 @@
         left: 50%;
         transform: translate(-50%, -50%);
     }
-       
+       .text {
+        position: absolute;
+        bottom:15%;
+        font-size:1vw;
+        color:Red;
+       }
     
 }
