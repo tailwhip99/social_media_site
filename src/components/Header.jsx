@@ -1,6 +1,7 @@
 import React from "react";
 import SignOut from "./SignOut"
 import '../styles/Header.scss'
+
 export default function Header({auth}) {
     return (
     

@@ -9,7 +9,7 @@
  padding:2vw 2vw 2vw 3vw;
  border-radius:3vw;
  border: 0.1vw solid rgba(123, 7, 255, 0.158);
-
+ box-shadow: 0.5vw 1vw rgba(194, 183, 207, 0.248);
  .first-line {
   gap:1vw;
     display:flex;
@@ -39,7 +39,7 @@
 }
 .message-text {
   display:flex;
-  font-size:1.5vw;
+  font-size:1.3vw;
   gap:2vw;
  align-items: center;
 }
