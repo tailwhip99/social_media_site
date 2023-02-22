@@ -8,9 +8,12 @@ background-color: rgb(255, 255, 255);
    width:auto;
    height:100vh;
    gap:2vw;
+ 
    .content {
     display:flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
   padding:6vw 0vw 6vw 0vw;
 align-items: center;
 border: 0.2vw solid #6d28d9;
@@ -21,15 +24,30 @@ border: 0.2vw solid #6d28d9;
 
  border-radius: 1vw;
  box-shadow: 2px 3px 10px grey;
+
+ @media only screen and (max-width: 600px) {
+  
+   width:80vw;
+    height:80vw;
+
+ }
  img {
    background-color: #6d28d9;
    border-radius: 2vw;
     width:10vw;
     margin-bottom:2vw;
-
+    @media only screen and (max-width: 600px) {
+      width:40vw;
+      
+   
+    }
  }
  h1 {
     font-size: 2vw;;
+    @media only screen and (max-width: 600px) {
+    font-size:6vw;
+   
+    }
  }
     button {
       font-size:1vw;
@@ -40,6 +58,11 @@ border: 0.2vw solid #6d28d9;
     color:#fafafa;
     font-weight: bold;
     border:0;
+    @media only screen and (max-width: 600px) {
+      width:60vw;
+      height:7svw;
+   font-size:5vw;
+    }
     }
    }
    

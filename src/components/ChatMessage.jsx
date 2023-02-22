@@ -1,12 +1,14 @@
 import React from "react";
 import Moment from 'react-moment';
-import {useRef} from 'react'
+
 import '../styles/Messages.scss'
+
+
 export default function ChatMessage({auth,message}) {
   
    
     const {title,text,date,uid,photoURL,image} =message;
-    const background = useRef(null)
+    
     const messageClass = uid === auth.currentUser.uid ? 'sent' : 'received';
     const changeBackgroundStyle = () => {
       const background = document.querySelector('.message-image');
@@ -30,7 +32,8 @@ export default function ChatMessage({auth,message}) {
            <button>follow</button>
         </div>
       <div className="message-text">
-        <h1>{title}</h1> <p>{text}</p>
+        <h1>{title}</h1> 
+        <p>{text}</p>
         </div>
  
     <div onLoad={changeBackgroundStyle} className="message-image">

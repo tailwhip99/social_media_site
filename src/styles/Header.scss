@@ -10,7 +10,13 @@
         height:4vw;
         background-color: white;
  padding:0vw 5vw 0vw 5vw ;
- margin-bottom:2vw;
+ margin-bottom:1vw;
+ @media only screen and (max-width: 600px) {
+  gap:4vw;
+ 
+   height:15vw;
+
+}
      .logo {
         display:flex;
        gap:0.5vw;
@@ -18,6 +24,23 @@
         color:rgb(123, 7, 255);
         font-weight: 600;
         font-size: 2vw;
+
+        p {
+          @media only screen and (max-width: 600px) {
+  width:0;
+
+           visibility: hidden;
+                
+                }
+        }
+        svg {
+          @media only screen and (max-width: 600px) {
+  
+           font-size:8vw;
+                 
+                 }
+        }
+       
      }
      .search-bar {
       width:20vw;
@@ -27,12 +50,24 @@
       padding-left:1vw;
       background-color: rgba(128, 128, 128, 0.107);
       border: 0px;
+
+      @media only screen and (max-width: 600px) {
+         font-size:3vw;
+        height:5vw;
+        width:50vw;
+            border-radius:0vw
+             }
      }
         .sign-out {
           display:flex;
           align-items: center;
     
            gap:10px;
+           @media only screen and (max-width: 600px) {
+         
+               
+                }
+
           button {
             background-color: rgb(123, 7, 255);
             width:10vw;
@@ -44,6 +79,13 @@
             border:0px;
             transition:background-color 0.2s ease-out;
             transition:color 0.2s ease-out;
+            @media only screen and (max-width: 600px) {
+              font-size:3vw;
+             height:5vw;
+             width:20vw;
+                 
+                  }
+
           }
           button:hover {
             background-color: rgb(255, 255, 255);
@@ -53,6 +95,17 @@
             height:3vw;
             border:0.20vw solid  rgba(123, 7, 255, 0.484);
             border-radius:20vw;
+            @media only screen and (max-width: 600px) {
+              height:8vw;
+                 
+                  }
+          }
+          p {
+
+            @media only screen and (max-width: 600px) {
+              visibility:hidden;
+                 
+                  }
           }
         }
     }

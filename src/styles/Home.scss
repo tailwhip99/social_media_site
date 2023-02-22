@@ -6,6 +6,10 @@
     align-items: center;
  background-color: #f4f4f5;
 
+ @media only screen and (max-width: 600px) {
+    padding-top:20vw;
+    
+        }
     .create-post {
         display:flex;
         align-items: center;
@@ -15,10 +19,18 @@
         width:50vw;
         height:4vw;
         gap:1vw;
+        
+        @media only screen and (max-width: 600px) {
+            height:10vw;
+                width:80vw;
+                }
        .post-image {
         border-radius: 20vw;
         height:3vw;
-         
+        @media only screen and (max-width: 600px) {
+            height:5vw;
+            
+                }
        }
         input {
             border:none;
@@ -27,7 +39,11 @@
             width:40vw;
             background-color: rgb(247, 247, 247);
             font-size: 1.5vw;
-           
+            @media only screen and (max-width: 600px) {
+                height:5vw;
+                  width: 60vw;
+                  font-size: 4vw;
+                    }
         }
         input:focus {
            outline: none;
